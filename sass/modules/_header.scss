@@ -1,0 +1,148 @@
+.navbar{
+	height: 129px;
+	background-color: $Default;
+
+	.active>a{
+		background-color: $Danger !important;
+		&:focus, &:hover, &:active{
+			background-color: $Night !important;
+			color: $Default !important;
+			transition: all 0.5s ease-in;
+		}
+	}
+
+	ul.navbar-nav{
+		@include screen (desktop) {
+			margin-right: 100px;
+		}
+	} li a{
+		line-height: 4;
+
+		@include screen (mobile) {
+			font-family: 'Montserrat', sans-serif;
+			color: $Night !important;
+			font-size: 17px;
+			line-height: 6.5;
+			padding-right: 50px;
+			padding-left: 50px;
+		}
+	}
+	a.navbar-brand{
+		margin-left: 100px !important;
+		margin-top: 20px;
+	}
+	.navbar-collapse{
+		margin-top: 77px;	
+		text-align: center;
+		background-color: $Default;
+		@include screen (mobile) {
+			margin-top: 0;
+			background-color: transparent;
+		}
+	}
+}	
+
+
+// NAVBAR END
+// Background Header Start
+
+.main-bg{
+	float: left;
+	height: 700px;
+	width: 100%;
+
+
+	.bg-img{
+		background-image: url(../img/main_bg.jpg);
+		background-size: cover;
+		float: left;
+		width: 100%;
+		height: 100%;
+	    background-position: 50% 50%;
+	    border-radius: 25px;
+
+		.overlay{
+			width: 100%;
+			height: 100%;
+			background: rgba($Primary,0.0);
+
+			.bg-container{
+
+				.text-container{
+				    &:hover{
+					-ms-transform: rotate(5deg); /* IE 9 */
+				    -webkit-transform: rotate(5deg); /* Safari */
+				    transform: rotate(5deg); /* Standard syntax */	
+				    transition: all 8s ease-in;			    	
+				    }
+
+					a:hover, a:focus{
+						text-decoration: none;
+					}
+
+					span.icon-youtube{											
+						font-size: 35px;
+						color: $Danger;
+						background: rgba($Night,0.3);
+						padding: 20px;
+						padding-bottom: 0;
+						float: left;
+						margin-top: 400px;
+						margin-left: 15px;
+						border-top-left-radius: 1em;
+						border-top-right-radius: 3em;
+
+						&:hover{
+							-ms-transform: rotate(4deg); /* IE 9 */
+						    -webkit-transform: rotate(4deg); /* Safari */
+						    transform: rotate(4deg); /* Standard syntax */	
+						    transition: all 0.5s ease-in;			    	
+						}
+
+						&:after{
+							content: 'SUBSCRIBE';
+							font-family: 'Josefin Slab', serif;
+							font-weight: 700;	
+							color: #000;
+							padding-left: 20px;
+							font-size: 45px;
+
+						}
+					}
+					span.icon-facebook{
+						font-size: 50px;
+						color: #3b5998;
+						background: rgba($Night,0.3);
+						padding: 20px;
+						float: left;
+						clear: both;
+						padding-right: 124px;
+						border-bottom-left-radius: 3em;
+						border-bottom-right-radius: 1em;
+						padding-top: 0;
+						
+						&:hover{
+							-ms-transform: rotate(4deg); /* IE 9 */
+						    -webkit-transform: rotate(4deg); /* Safari */
+						    transform: rotate(4deg); /* Standard syntax */	
+						    transition: all 0.5s ease-in;			    	
+					    }
+
+						&:after{
+							content: 'LIKE';
+							font-family: 'Josefin Slab', serif;
+							font-weight: 700;	
+							color: #000;
+							padding-left: 20px;
+							font-size: 45px;
+
+						}
+					}
+				}
+					
+			}
+		}
+	}
+}
+
+// Background Header END

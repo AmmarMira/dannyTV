@@ -1,0 +1,85 @@
+.aboutSection{
+	margin-top: 100px;
+	float: left;
+	background-color: rgba(floralwhite,0.5);
+
+	.lefSide{
+		float: left;
+		.lineDivider{
+			height: 230px;
+			width: 2px;
+			background-color: $Night;
+			margin: 50px auto;
+		}
+		.aboutImg{
+			width: 370px;
+			height: 440px;
+			overflow: hidden;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.rightSide{
+		h1{
+			color: $Danger;
+			padding: 40px 0;
+			font-size: 40px;
+
+		}
+		p{
+			line-height: 2;
+			font-size: 20px;
+		}
+		.albumImg{
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			float: left;	
+			margin: 50px 0;	
+			img{
+				width: 100%;
+				&:hover{
+					opacity: 0.3;
+					-ms-transform: rotate(180deg); /* IE 9 */
+				    -webkit-transform: rotate(180deg); /* Safari */
+				    transform: rotate(180deg); /* Standard syntax */	
+				    transition: all 1.5s ease-in;	
+				}
+			}
+		}
+		.teamMember{
+			width: 200px;
+			height: 200px;
+			float: left;	
+			margin-top: 180px;
+			img{
+				width: 100%;
+				opacity: 0.3;
+				border-radius: 50%;
+				&:hover{
+				   opacity: 1;
+				   border-radius: 50%;
+				   transition: opacity .5s ease-in-out;
+				   -moz-transition: opacity .5s ease-in-out;
+				   -webkit-transition: opacity .5s ease-in-out;
+				}
+			}
+			a{
+				color: lighten( $Danger, 40% );
+				text-align: center;
+				font-size: 18px;
+				float: left;
+				margin: 15px;
+				&:hover{
+					text-decoration: none;
+					color: lighten( $Danger, 0 );
+					 transition: all .25s ease-in;	
+				}
+			}
+			h6{
+				text-align: center;
+			}
+		}
+	}
+}
