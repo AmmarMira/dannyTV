@@ -1,3 +1,4 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
 .huge-headline {
   font-size: 22px; }
   @media only screen and (min-width: 1168px) {
@@ -185,8 +186,77 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
           padding-left: 20px;
           font-size: 45px; }
 
+.quick-contact {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 60px 0;
+  margin-bottom: 0; }
+  .quick-contact h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px; }
+  .quick-contact .contact-email {
+    padding-top: 20px; }
+    .quick-contact .contact-email h2 {
+      padding: 10px 0; }
+  .quick-contact .title-contact {
+    margin-top: 32px; }
+  .quick-contact .row-first {
+    margin-bottom: 10px;
+    margin-top: 8px; }
+    .quick-contact .row-first a {
+      transition: all .3s ease;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -o-transition: all .3s ease; }
+      .quick-contact .row-first a .fa {
+        font-size: 24px;
+        margin-right: 5px; }
+
+.contact a {
+  border-radius: 2px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.25);
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 7px; }
+
+.contact a:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  text-decoration: none; }
+
+.contact a.facebook:hover, .fa-facebook {
+  color: #00aff0; }
+
+.contact a.google:hover, .fa-google-plus {
+  color: #dd4b39; }
+
+.contact a.instagram:hover, .fa-instagram {
+  color: #c13584; }
+
+.contact a.twitter:hover, .fa-twitter {
+  color: #00acee; }
+
+#map-overlay {
+  height: 400px;
+  margin-top: -405px;
+  background-color: #cc181e;
+  padding: 40px; }
+  #map-overlay h2 {
+    font-family: 'Montserrat', sans-serif; }
+  #map-overlay h1 {
+    padding: 20px 0;
+    font-size: 20px; }
+  #map-overlay ul li {
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: .5;
+    list-style: none; }
+
 .aboutSection {
   margin-top: 100px;
+  margin-bottom: 50px;
   float: left;
   background-color: rgba(255, 250, 240, 0.5); }
   .aboutSection .lefSide {
@@ -226,30 +296,58 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         transform: rotate(180deg);
         /* Standard syntax */
         transition: all 1.5s ease-in; }
-  .aboutSection .rightSide .teamMember {
-    width: 200px;
-    height: 200px;
-    float: left;
+  .aboutSection .rightSide .teamContainer {
     margin-top: 180px; }
-    .aboutSection .rightSide .teamMember img {
-      width: 100%;
-      opacity: 0.3;
-      border-radius: 50%; }
-      .aboutSection .rightSide .teamMember img:hover {
-        opacity: 1;
-        border-radius: 50%;
-        transition: opacity .5s ease-in-out;
-        -moz-transition: opacity .5s ease-in-out;
-        -webkit-transition: opacity .5s ease-in-out; }
-    .aboutSection .rightSide .teamMember a {
-      color: #f7b9bb;
-      text-align: center;
-      font-size: 18px;
+    .aboutSection .rightSide .teamContainer .teamMember {
+      width: 200px;
+      height: 200px;
       float: left;
-      margin: 15px; }
-      .aboutSection .rightSide .teamMember a:hover {
-        text-decoration: none;
-        color: #cc181e;
-        transition: all .25s ease-in; }
-    .aboutSection .rightSide .teamMember h6 {
-      text-align: center; }
+      display: table; }
+      .aboutSection .rightSide .teamContainer .teamMember img {
+        width: 100%;
+        opacity: 0.3;
+        border-radius: 50%; }
+        .aboutSection .rightSide .teamContainer .teamMember img:hover {
+          opacity: 1;
+          border-radius: 50%;
+          transition: opacity .5s ease-in-out;
+          -moz-transition: opacity .5s ease-in-out;
+          -webkit-transition: opacity .5s ease-in-out; }
+      .aboutSection .rightSide .teamContainer .teamMember a {
+        color: #f7b9bb;
+        text-align: center;
+        font-size: 18px;
+        float: left;
+        margin-top: 15px; }
+        .aboutSection .rightSide .teamContainer .teamMember a:hover {
+          text-decoration: none;
+          color: #cc181e;
+          transition: all .25s ease-in; }
+      .aboutSection .rightSide .teamContainer .teamMember h6 {
+        text-align: center; }
+
+.youtubeWrap h1 {
+  padding: 30px; }
+
+.youtubeWrap .embed-responsive-16by9 {
+  padding-bottom: 0; }
+
+.youtubeWrap .orange-circle-button {
+  box-shadow: 2px 4px 0 2px rgba(0, 0, 0, 0.1);
+  border: 0.5em solid #cc181e;
+  font-size: 1em;
+  line-height: 1.1em;
+  color: #fff;
+  background-color: #cc181e;
+  margin: 70px 0;
+  border-radius: 50%;
+  height: 7em;
+  width: 7em;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 20px; }
+  .youtubeWrap .orange-circle-button:hover {
+    color: #ffffff;
+    text-decoration: none;
+    border-color: #e73036; }
+  .youtubeWrap .orange-circle-button:focus {
+    outline: none; }
