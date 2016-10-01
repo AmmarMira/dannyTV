@@ -37,7 +37,10 @@
 			height: 200px;
 			overflow: hidden;
 			float: left;	
-			margin: 50px 0;	
+				
+			@include screen (desktop){
+				margin: 50px 0;
+			}
 			img{
 				width: 100%;
 				&:hover{
@@ -50,7 +53,9 @@
 			}
 		}
 		.teamContainer{
-			margin-top: 180px;
+			@include screen (desktop){
+				margin-top: 180px;
+			}
 
 				.teamMember{
 				width: 200px;

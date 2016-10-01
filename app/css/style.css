@@ -75,7 +75,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .navbar {
   height: 129px;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 9999; }
   .navbar .active > a {
     background-color: #cc181e !important; }
     .navbar .active > a:focus, .navbar .active > a:hover, .navbar .active > a:active {
@@ -283,8 +284,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     width: 200px;
     height: 200px;
     overflow: hidden;
-    float: left;
-    margin: 50px 0; }
+    float: left; }
+    @media only screen and (min-width: 1168px) {
+      .aboutSection .rightSide .albumImg {
+        margin: 50px 0; } }
     .aboutSection .rightSide .albumImg img {
       width: 100%; }
       .aboutSection .rightSide .albumImg img:hover {
@@ -296,35 +299,36 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         transform: rotate(180deg);
         /* Standard syntax */
         transition: all 1.5s ease-in; }
-  .aboutSection .rightSide .teamContainer {
-    margin-top: 180px; }
-    .aboutSection .rightSide .teamContainer .teamMember {
-      width: 200px;
-      height: 200px;
+  @media only screen and (min-width: 1168px) {
+    .aboutSection .rightSide .teamContainer {
+      margin-top: 180px; } }
+  .aboutSection .rightSide .teamContainer .teamMember {
+    width: 200px;
+    height: 200px;
+    float: left;
+    display: table; }
+    .aboutSection .rightSide .teamContainer .teamMember img {
+      width: 100%;
+      opacity: 0.3;
+      border-radius: 50%; }
+      .aboutSection .rightSide .teamContainer .teamMember img:hover {
+        opacity: 1;
+        border-radius: 50%;
+        transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out; }
+    .aboutSection .rightSide .teamContainer .teamMember a {
+      color: #f7b9bb;
+      text-align: center;
+      font-size: 18px;
       float: left;
-      display: table; }
-      .aboutSection .rightSide .teamContainer .teamMember img {
-        width: 100%;
-        opacity: 0.3;
-        border-radius: 50%; }
-        .aboutSection .rightSide .teamContainer .teamMember img:hover {
-          opacity: 1;
-          border-radius: 50%;
-          transition: opacity .5s ease-in-out;
-          -moz-transition: opacity .5s ease-in-out;
-          -webkit-transition: opacity .5s ease-in-out; }
-      .aboutSection .rightSide .teamContainer .teamMember a {
-        color: #f7b9bb;
-        text-align: center;
-        font-size: 18px;
-        float: left;
-        margin-top: 15px; }
-        .aboutSection .rightSide .teamContainer .teamMember a:hover {
-          text-decoration: none;
-          color: #cc181e;
-          transition: all .25s ease-in; }
-      .aboutSection .rightSide .teamContainer .teamMember h6 {
-        text-align: center; }
+      margin-top: 15px; }
+      .aboutSection .rightSide .teamContainer .teamMember a:hover {
+        text-decoration: none;
+        color: #cc181e;
+        transition: all .25s ease-in; }
+    .aboutSection .rightSide .teamContainer .teamMember h6 {
+      text-align: center; }
 
 .youtubeWrap h1 {
   padding: 30px; }

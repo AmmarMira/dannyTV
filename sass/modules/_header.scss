@@ -1,6 +1,7 @@
 .navbar{
 	height: 129px;
 	background-color: $Default;
+	z-index: 9999;
 
 	.active>a{
 		background-color: $Danger !important;
